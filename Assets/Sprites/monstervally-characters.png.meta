@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player-left-0
+      name: mplayer-left-0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,7 +121,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-down-0
+      name: mplayer-down-0
       rect:
         serializedVersion: 2
         x: 8
@@ -142,7 +142,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-right-0
+      name: mplayer-right-0
       rect:
         serializedVersion: 2
         x: 16
@@ -163,7 +163,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-up-0
+      name: mplayer-up-0
       rect:
         serializedVersion: 2
         x: 24
@@ -184,7 +184,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-left-1
+      name: mplayer-left-1
       rect:
         serializedVersion: 2
         x: 0
@@ -205,7 +205,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-down-1
+      name: mplayer-down-1
       rect:
         serializedVersion: 2
         x: 8
@@ -226,7 +226,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-right-1
+      name: mplayer-right-1
       rect:
         serializedVersion: 2
         x: 16
@@ -247,7 +247,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-up-1
+      name: mplayer-up-1
       rect:
         serializedVersion: 2
         x: 24
@@ -268,7 +268,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-left-2
+      name: mplayer-left-2
       rect:
         serializedVersion: 2
         x: 0
@@ -289,7 +289,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-down-2
+      name: mplayer-down-2
       rect:
         serializedVersion: 2
         x: 8
@@ -310,7 +310,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-right-2
+      name: mplayer-right-2
       rect:
         serializedVersion: 2
         x: 16
@@ -331,7 +331,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-up-2
+      name: mplayer-up-2
       rect:
         serializedVersion: 2
         x: 24
@@ -352,7 +352,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-left-3
+      name: mplayer-left-3
       rect:
         serializedVersion: 2
         x: 0
@@ -373,7 +373,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-down-3
+      name: mplayer-down-3
       rect:
         serializedVersion: 2
         x: 8
@@ -394,7 +394,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-right-3
+      name: mplayer-right-3
       rect:
         serializedVersion: 2
         x: 16
@@ -415,7 +415,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-up-3
+      name: mplayer-up-3
       rect:
         serializedVersion: 2
         x: 24
@@ -435,6 +435,342 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: fplayer-left-0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872577852868b734d9c197059fab3f5b
+      internalID: 348480634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-down-0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d01a611a0492654ba7d1cd5f08d85d0
+      internalID: -613382399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-right-0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1924a1e68bb312a4fb6c05b1608b0b16
+      internalID: -773559936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-up-0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c10d5d5022fef4fbedf60474ece2b9
+      internalID: -1633987154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-left-1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb8d68a9d74e264a86bb1348cacec9a
+      internalID: -2018920275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-down-1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4eabc3293a35e48b4715282352353f
+      internalID: 426670210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-right-1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471f49dfce65eaa4180c24cd86874f49
+      internalID: -728554691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-up-1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dd50727f979a4499981f6b656603fd
+      internalID: -1950236319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-left-2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7f443e15a6b394dbaf7eea1ec51ada
+      internalID: -271187807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-down-2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6af6dd2edd6094ab2ab10b0ead5c63
+      internalID: -923509555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-right-2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd3d6482231f3244ba8676b5fcd8c41
+      internalID: 958905878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-up-2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58df1ae78e36dde4ebfc840e87f97f8e
+      internalID: -1409211049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-left-3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01c353ef60561346823e46a3d6c018e
+      internalID: -1072302943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-down-3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9abb83157f318b4f8f74739fead3c1c
+      internalID: 463539979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-right-3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2f89ff7a08fb049be4501a5f22fa8f
+      internalID: -702577800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fplayer-up-3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7797a7cad7efe364189d6d8a050525c6
+      internalID: 591352867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -446,22 +782,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player-down-0: -1226225038
-      player-down-1: -1145076588
-      player-down-2: -1211677938
-      player-down-3: 1310638363
-      player-left-0: 2406599878236642165
-      player-left-1: -1448770530
-      player-left-2: -1652417885
-      player-left-3: -911885671
-      player-right-0: -1144279931
-      player-right-1: 950716539
-      player-right-2: 1087880994
-      player-right-3: -2124970840
-      player-up-0: -466284855
-      player-up-1: -1959431770
-      player-up-2: 375590854
-      player-up-3: 72369795
+      fplayer-down-0: -613382399
+      fplayer-down-1: 426670210
+      fplayer-down-2: -923509555
+      fplayer-down-3: 463539979
+      fplayer-left-0: 348480634
+      fplayer-left-1: -2018920275
+      fplayer-left-2: -271187807
+      fplayer-left-3: -1072302943
+      fplayer-right-0: -773559936
+      fplayer-right-1: -728554691
+      fplayer-right-2: 958905878
+      fplayer-right-3: -702577800
+      fplayer-up-0: -1633987154
+      fplayer-up-1: -1950236319
+      fplayer-up-2: -1409211049
+      fplayer-up-3: 591352867
+      mplayer-down-0: -1145076588
+      mplayer-down-1: -1211677938
+      mplayer-down-2: -1211677938
+      mplayer-down-3: 1310638363
+      mplayer-left-0: -1448770530
+      mplayer-left-1: -1652417885
+      mplayer-left-2: -911885671
+      mplayer-left-3: -1226225038
+      mplayer-right-0: -1144279931
+      mplayer-right-1: 950716539
+      mplayer-right-2: 1087880994
+      mplayer-right-3: -2124970840
+      mplayer-up-0: -466284855
+      mplayer-up-1: -1959431770
+      mplayer-up-2: 375590854
+      mplayer-up-3: 72369795
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

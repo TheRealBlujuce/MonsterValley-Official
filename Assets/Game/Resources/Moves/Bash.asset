@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveName: Bash
   moveDescription: Bashes the opposing monster with a paw, tail, or head
-  moveType: 0
+  moveType: 1
   power: 45
   accuracy: 100
   movePoints: 20

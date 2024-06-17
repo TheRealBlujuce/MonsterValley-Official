@@ -115,11 +115,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: charmot-f
+      name: charmot
       rect:
         serializedVersion: 2
         x: 0
-        y: 152
+        y: 200
         width: 40
         height: 40
       alignment: 9
@@ -136,11 +136,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charmot-b
+      name: aquaxol
       rect:
         serializedVersion: 2
         x: 40
-        y: 152
+        y: 200
         width: 40
         height: 40
       alignment: 7
@@ -157,11 +157,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chukem-f
+      name: stoutle
       rect:
         serializedVersion: 2
         x: 80
-        y: 152
+        y: 200
         width: 40
         height: 40
       alignment: 9
@@ -178,12 +178,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chukem-b
+      name: morcrow
       rect:
         serializedVersion: 2
         x: 120
-        y: 152
-        width: 41
+        y: 200
+        width: 40
         height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -199,11 +199,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magmorta-f
+      name: buzzail
       rect:
         serializedVersion: 2
         x: 0
-        y: 112
+        y: 160
         width: 40
         height: 40
       alignment: 9
@@ -220,11 +220,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magmorta-b
+      name: nekoshis
       rect:
         serializedVersion: 2
-        x: 40
-        y: 112
+        x: 80
+        y: 160
         width: 40
         height: 40
       alignment: 7
@@ -240,6 +240,216 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: sparduck
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 160
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781fb36c1f1b6b545ab0c87bb409b238
+      internalID: 2109216656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabolt
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 160
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d52391a08ab6e41a0f47e32f157268
+      internalID: -2138520182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: infercoil
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac876a831d6c9a43a14a4b8ca8ff2da
+      internalID: 977391383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aquarash
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cad31669e7264a4d969b0c72368e57d
+      internalID: -437817050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushwood
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368f0b383aa1ba841a469f3afbf8a18e
+      internalID: -1593196338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ragewing
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08deafdc8a44d934aa884cf7aafe82f0
+      internalID: -224750704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstervally-monsters_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7121c8e39140a9248bdc28a460030571
+      internalID: 357578764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstervally-monsters_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9183c8a6b2064474180d727110f2a780
+      internalID: -1484731862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstervally-monsters_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40661c3e00b5f894f9221ffc9f3e08be
+      internalID: -1225122938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstervally-monsters_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8387c9e7c4bc1846935f9fd4807af8a
+      internalID: -1423236049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -251,12 +461,32 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      charmot-b: 8686104739156013483
-      charmot-f: 227763563813354381
-      chukem-b: -2328734148890816666
-      chukem-f: 3026931753489039485
-      magmorta-b: -4824037241571374778
-      magmorta-f: -7766582421136647375
+      aquarash: -437817050
+      aquaxol: 8686104739156013483
+      aquaxol-b: 2099953754
+      aquaxol-f: 768267491
+      axolobble-b: 1973472256
+      axolobble-f: -1231604045
+      axomarine-b: 1454077071
+      axomarine-f: 1461146357
+      bouldurtle-b: -249838485
+      bouldurtle-f: 665879120
+      buzzail: -7766582421136647375
+      charmot: 227763563813354381
+      infercoil: 977391383
+      monstervally-monsters_0: 357578764
+      monstervally-monsters_1: -1484731862
+      monstervally-monsters_2: -1225122938
+      monstervally-monsters_3: -1423236049
+      morcrow: -2328734148890816666
+      mushwood: -1593196338
+      nekoshis: -4824037241571374778
+      rabolt: -2138520182
+      ragewing: -224750704
+      sparduck: 2109216656
+      stoutle: 3026931753489039485
+      stoutle-b: -1875042007
+      stoutle-f: -1431955717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

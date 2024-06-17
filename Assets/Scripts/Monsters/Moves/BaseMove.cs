@@ -5,24 +5,18 @@ using UnityEngine;
 [CreateAssetMenu(fileName ="Move", menuName ="Monster/Create New Move")]
 public class BaseMove : ScriptableObject
 {
-    [SerializeField]
-    private string moveName;
+    [SerializeField] private string moveName;
 
     [TextArea]
-    [SerializeField]
-    private string moveDescription;
+    [SerializeField] private string moveDescription;
+    [SerializeField] private PemoType moveType;
+    [SerializeField] private int power;
+    [SerializeField] private int accuracy;
+    [SerializeField] private int movePoints;
+    [SerializeField] private bool isSpecial;
+    [SerializeField] private bool isStatus;
 
-    [SerializeField]
-    private PeMoType moveType;
-
-    [SerializeField]
-    private int power;
-
-    [SerializeField]
-    private int accuracy;
-
-    [SerializeField]
-    private int movePoints;
+    [SerializeField] MoveEffects moveEffects;
 
     public string GetMoveName()
     {
@@ -32,7 +26,7 @@ public class BaseMove : ScriptableObject
     {
         return moveDescription;
     }
-    public PeMoType GetMoveType()
+    public PemoType GetMoveType()
     {
         return moveType;
     }
@@ -48,5 +42,30 @@ public class BaseMove : ScriptableObject
     {
         return movePoints;
     }
+
+    public bool CheckIsSpecial()
+    {
+        return isSpecial;
+    }
+    public bool CheckIsStatus()
+    {
+        return isStatus;
+    }
+
+    public MoveEffects GetMoveEffects()
+    {
+        return moveEffects;
+    }
  
+}
+
+[System.Serializable]
+public class MoveEffects
+{
+    [SerializeField] private ConditionID statusEffect;
+
+    public ConditionID GetStatusEffect()
+    {
+        return statusEffect;
+    }
 }

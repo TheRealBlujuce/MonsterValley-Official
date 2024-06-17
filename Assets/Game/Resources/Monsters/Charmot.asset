@@ -13,15 +13,20 @@ MonoBehaviour:
   m_Name: Charmot
   m_EditorClassIdentifier: 
   pemoName: Charmot
-  pemoDescription: 
+  pemoDescription: Charmot, the fire-marmot. This monster always has a runny nose
+    that leaks lava bubbles. It uses its lava snot to build its homes which are increadibly
+    durable and well protected.
   pemoFront: {fileID: 227763563813354381, guid: da1ac54fcee5d604cbf7329d44d026e3, type: 3}
-  pemoBack: {fileID: 8686104739156013483, guid: da1ac54fcee5d604cbf7329d44d026e3, type: 3}
-  type: 1
+  type: 2
   maxHp: 45
-  attack: 60
+  attack: 75
   defense: 60
-  special: 45
-  speed: 30
+  special: 30
+  speed: 35
   learnableMoves:
   - baseMove: {fileID: 11400000, guid: 3e11912aeb5d6a343b1d9e543de9ce4b, type: 2}
     levelLearned: 1
+  - baseMove: {fileID: 11400000, guid: e9cc264ee32a94f49840c701ba84e321, type: 2}
+    levelLearned: 3
+  - baseMove: {fileID: 11400000, guid: 7c039b68f839b21449e6ea0c39696fc7, type: 2}
+    levelLearned: 6

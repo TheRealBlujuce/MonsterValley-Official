@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664c2b8dcc0b3464a9d20ddec42bacb9, type: 3}
+  m_Name: Rabolt
+  m_EditorClassIdentifier: 
+  pemoName: Rabolt
+  pemoDescription: 'Rabolt, the electric rabbit. This monster runs fast and when
+    it does, its ears light up with electricity. It furiously snacks on carrots,
+    potatos, and other roots and vegtables. '
+  pemoFront: {fileID: -2138520182, guid: da1ac54fcee5d604cbf7329d44d026e3, type: 3}
+  type: 7
+  maxHp: 35
+  attack: 75
+  defense: 45
+  special: 60
+  speed: 60
+  learnableMoves:
+  - baseMove: {fileID: 11400000, guid: 1997f26a4a28913408e37c2d410aa277, type: 2}
+    levelLearned: 1
+  - baseMove: {fileID: 11400000, guid: 42a30c05e50fd8448925bf9ee0d125c8, type: 2}
+    levelLearned: 3
+  - baseMove: {fileID: 11400000, guid: 2c1b2503526cc424c88f9c6a7855ce5c, type: 2}
+    levelLearned: 6

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c111f500d01734e9b9f7c41bcbd84c, type: 3}
+  m_Name: Egg
+  m_EditorClassIdentifier: 
+  itemName: Egg
+  itemDescription: Freshly laid Egg. Used in feeding wild Pemo to tame them.
+  itemSprite: {fileID: 1440364427, guid: 98f4fb1422d83014c81ad7caf1e72123, type: 3}
+  firstItemType: 2
+  secondItemType: 0

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664c2b8dcc0b3464a9d20ddec42bacb9, type: 3}
+  m_Name: Stoutle
+  m_EditorClassIdentifier: 
+  pemoName: Stoutle
+  pemoDescription: Stoutle, the stout-turtle. This monster likes to swim in mud and
+    murky water. Although it has a playful nature, it feircly defends its home and
+    friends.
+  pemoFront: {fileID: 3026931753489039485, guid: da1ac54fcee5d604cbf7329d44d026e3, type: 3}
+  type: 4
+  maxHp: 50
+  attack: 60
+  defense: 75
+  special: 45
+  speed: 25
+  learnableMoves:
+  - baseMove: {fileID: 11400000, guid: 1997f26a4a28913408e37c2d410aa277, type: 2}
+    levelLearned: 1
+  - baseMove: {fileID: 11400000, guid: b4c830dfdd9ec304c84a87ec251803b1, type: 2}
+    levelLearned: 3

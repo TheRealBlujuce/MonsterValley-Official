@@ -28,6 +28,10 @@ public class Move
     {
         MP = movePoints;
     }
+    public int GetMP()
+    {
+        return MP;
+    }
     public int GetHP()
     {
         return MP;
