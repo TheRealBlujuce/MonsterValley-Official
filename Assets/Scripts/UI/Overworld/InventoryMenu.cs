@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor.Search;
 using UnityEngine;
 
 public class InventoryMenu : MonoBehaviour
@@ -14,22 +15,27 @@ public class InventoryMenu : MonoBehaviour
     [SerializeField] private Color highlightColor;
 
     public event Action OnMenuClose;
+    public int inventorySpace = 20;
     private bool canCloseMenu = false; // this is to make sure we can actually close the menu after a bit of delay.
     [SerializeField] private int currentItem = 0; // int for item selection
-    private int currentItemList = 0; // int for item selection
+    [SerializeField] private int currentItemList = 0; // int for item selection
     private int currentPemo = 0; // int for pemo selection
-    private List<ItemEntry> itemList;
+    public List<ItemEntry> itemList;
     private List<ItemType> inventoryType = new List<ItemType>() {ItemType.Healing, ItemType.Food, ItemType.Material, ItemType.Key_Item};
     private bool hasChangedInventory = false;
-
+    private bool isClearingMenu;
+    private bool isSettingInventory = true;
+    [SerializeField] private PlayerController player;
     private void Awake()
     {
         Invoke(nameof(SetCloseMenu), 0.15f);
-        itemList = new List<ItemEntry>();
-        currentItemList = 0;
-        SetCurrentInventory(GameController.gameControllerInstance.GetPlayerController().GetComponent<Inventory>(), ItemType.Healing);
-        
     }
+
+    private void Start()
+    {
+        player = GameController.gameControllerInstance.GetPlayerController();
+    }
+
     public void UpdatePartyMenuData(PemoParty party)
     {
         partyMenu.SetPartyMenuData(party.GetPemoParty());
@@ -37,18 +43,17 @@ public class InventoryMenu : MonoBehaviour
 
 #region Setting Up and Updating Inventory
     
-    private void InitInventory()
+    public void InitInventory()
     {
         
-        if (itemList.Count == 0)
-        {
-            return;
-        }
-
+        SetCurrentInventory(player.GetComponent<Inventory>(), inventoryType[currentItemList]);
         // Ensure there are enough item objects in the inventory holder
-        foreach(ItemEntry itemEntry in itemList)
+        if(inventoryHolder.transform.childCount < inventorySpace)
         {
-           Instantiate(inventoryItem, inventoryHolder.transform);
+            for (int i = 0; i < inventorySpace; i++)
+            {
+                Instantiate(inventoryItem, inventoryHolder.transform);
+            }
         }
 
         UpdateInventory();
@@ -56,10 +61,6 @@ public class InventoryMenu : MonoBehaviour
 
     private void UpdateInventory()
     {
-        if (itemList.Count == 0)
-        {
-            return;
-        }
 
         int maxVisibleItems = 5; // Number of items to show at a time including the selected item
 
@@ -68,8 +69,9 @@ public class InventoryMenu : MonoBehaviour
         int endIndex = Mathf.Min(startIndex + maxVisibleItems, itemList.Count);
 
         // Update the data and visibility of each item object
-
-        
+        if (itemList.Count() > 0)
+        {
+            // Debug.LogWarning("Setting Item Data!");
             for (int i = 0; i < inventoryHolder.transform.childCount; i++)
             {
                 var itemObject = inventoryHolder.transform.GetChild(i).gameObject;
@@ -84,81 +86,93 @@ public class InventoryMenu : MonoBehaviour
                     itemObject.SetActive(false);
                 }
             }
-        
-
-
+        }
     }
 
-
-    private void ClearInventory()
+    private void HideInventory()
     {
-        var items = inventoryHolder.GetComponentsInChildren<InventoryItem>();
-        foreach (InventoryItem item in items)
+
+        if (itemList.Count() <= 0)
         {
-            Destroy(item.gameObject);
+            // Debug.LogWarning("Hiding Item Data!");
+            for (int i = 0; i < inventoryHolder.transform.childCount; i++)
+            {
+                var itemObject = inventoryHolder.transform.GetChild(i).gameObject;
+                itemObject.SetActive(false);
+            }
         }
+    }
+
+    public void ClearInventory()
+    {
+        isClearingMenu = true;
+        itemList.Clear();
+        isClearingMenu = false;
     }
     public void SetCurrentInventory(Inventory inventory, ItemType type)
     {
         
-        switch(type)
+        if (isSettingInventory) 
         {
-            case ItemType.Healing:
-                if (!hasChangedInventory)
-                {
-                    ClearInventory();
-                    hasChangedInventory = true;
-                    itemList = new List<ItemEntry>(inventory.GetHealingItemList().Count);
-                    foreach (var entry in inventory.GetHealingItemList())
+            ClearInventory();
+
+            switch(type)
+            {
+                case ItemType.Healing:
+                    if (!hasChangedInventory)
                     {
-                        itemList.Add(new ItemEntry { item = entry.item, quantity = entry.quantity });
+                        
+                        hasChangedInventory = true;
+                        itemList = new List<ItemEntry>(inventory.GetHealingItemList().Count);
+                        foreach (var entry in inventory.GetHealingItemList())
+                        {
+                            itemList.Add(new ItemEntry { item = entry.item, quantity = entry.quantity });
+                        }
+                        inventoryTitle.text = "< Restoratives >";
                     }
-                    InitInventory();
-                    inventoryTitle.text = "< Restoratives >";
-                }
-            break;
-            case ItemType.Food:
-                if (!hasChangedInventory)
-                {
-                    ClearInventory();
-                    hasChangedInventory = true;
-                    itemList = new List<ItemEntry>(inventory.GetFoodItemList().Count);
-                    foreach (var entry in inventory.GetFoodItemList())
+                break;
+                case ItemType.Food:
+                    if (!hasChangedInventory)
                     {
-                        itemList.Add(new ItemEntry { item = entry.item, quantity = entry.quantity });
+                        
+                        hasChangedInventory = true;
+                        itemList = new List<ItemEntry>(inventory.GetFoodItemList().Count);
+                        foreach (var entry in inventory.GetFoodItemList())
+                        {
+                            itemList.Add(new ItemEntry { item = entry.item, quantity = entry.quantity });
+                        }
+                        inventoryTitle.text = "< Food >";
                     }
-                    InitInventory();
-                    inventoryTitle.text = "< Food >";
-                }
-            break;
-            case ItemType.Material:
-                if (!hasChangedInventory)
-                {
-                    ClearInventory();
-                    hasChangedInventory = true;
-                    itemList = new List<ItemEntry>(inventory.GetMaterialItemList().Count);
-                    foreach (var entry in inventory.GetMaterialItemList())
+                break;
+                case ItemType.Material:
+                    if (!hasChangedInventory)
                     {
-                        itemList.Add(new ItemEntry { item = entry.item, quantity = entry.quantity });
+                        
+                        hasChangedInventory = true;
+                        itemList = new List<ItemEntry>(inventory.GetMaterialItemList().Count);
+                        foreach (var entry in inventory.GetMaterialItemList())
+                        {
+                            itemList.Add(new ItemEntry { item = entry.item, quantity = entry.quantity });
+                        }
+                        inventoryTitle.text = "< Materials > ";
                     }
-                    InitInventory();
-                    inventoryTitle.text = "< Materials > ";
-                }
-            break;
-            case ItemType.Key_Item:
-                if (!hasChangedInventory)
-                {
-                    ClearInventory();
-                    hasChangedInventory = true;
-                    itemList = new List<ItemEntry>(inventory.GetKeyItemList().Count);
-                    foreach (var entry in inventory.GetKeyItemList())
+                break;
+                case ItemType.Key_Item:
+                    if (!hasChangedInventory)
                     {
-                        itemList.Add(new ItemEntry { item = entry.item, quantity = entry.quantity });
+
+                        hasChangedInventory = true;
+                        itemList = new List<ItemEntry>(inventory.GetKeyItemList().Count);
+                        foreach (var entry in inventory.GetKeyItemList())
+                        {
+                            itemList.Add(new ItemEntry { item = entry.item, quantity = entry.quantity });
+                        }
+                        inventoryTitle.text = "< Key Items >";
                     }
-                    InitInventory();
-                    inventoryTitle.text = "< Key Items >";
-                }
-            break;
+                break;
+            }
+
+            isSettingInventory = false;
         }
     }
 
@@ -167,9 +181,9 @@ public class InventoryMenu : MonoBehaviour
 #region Handeling Menu State
     private void CloseMenu()
     {
-        ClearInventory();
         OnMenuClose();
     }
+    
     public void SetCloseMenu()
     {
         canCloseMenu = true;
@@ -177,8 +191,7 @@ public class InventoryMenu : MonoBehaviour
 
     private void HandleInventoryMenuSelection()
     {
-        var player = GameController.gameControllerInstance.GetPlayerController();
-
+        // control item selection
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             currentItem++;
@@ -191,26 +204,30 @@ public class InventoryMenu : MonoBehaviour
             if (currentItem < 0) { currentItem = itemList.Count - 1; }
         }
 
+        // update the current selection in the menu
         UpdateInventorySelection(currentItem);
-        UpdateInventory();
+        
+        // Show or Hide the item data.
+        if (itemList.Count() > 0 ) { UpdateInventory(); } else { HideInventory(); }
 
-        // Change Inventories
+        // control inventory menu selection
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             currentItemList++;
             hasChangedInventory = false;
+            isSettingInventory = true;
             if (currentItemList > inventoryType.Count - 1) { currentItemList = 0; currentItem = 0; }
-
         }
         else
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             currentItemList--;
             hasChangedInventory = false;
+            isSettingInventory = true;
             if (currentItemList < 0)  { currentItemList = inventoryType.Count -1; currentItem = 0; }
-            
         }
 
+        // set the next inventory
         SetCurrentInventory(player.GetComponent<Inventory>(), inventoryType[currentItemList]);
 
         if (Input.GetKeyDown(KeyCode.Z))
@@ -227,6 +244,7 @@ public class InventoryMenu : MonoBehaviour
         int maxVisibleItems = 5; // Number of items to show at a time including the selected item
         int startIndex = Mathf.Clamp(currentItem - maxVisibleItems / 2, 0, Mathf.Max(0, itemList.Count - maxVisibleItems));
 
+        // update the selection feedback of the selected item
         for (int i = 0; i < itemCount.Length; i++)
         {
             int actualIndex = startIndex + i;

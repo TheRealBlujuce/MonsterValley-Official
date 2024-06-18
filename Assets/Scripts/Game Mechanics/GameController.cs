@@ -20,6 +20,8 @@ public class GameController : MonoBehaviour
     {
         gameControllerInstance = this;
         partyMenu.InitPartyMenuScreen();
+        inventoryMenu.InitInventory();
+        
     }
 
     private void Start()
@@ -56,6 +58,7 @@ public class GameController : MonoBehaviour
         gameState = GameState.Menu;
         inventoryMenu.UpdatePartyMenuData(player.GetComponent<PemoParty>());
         inventoryMenu.gameObject.SetActive(true);
+        
     }
 
     private void ExitMenuState()

@@ -25,4 +25,9 @@ public class InventoryItem : MonoBehaviour
     {
         return itemAmount;
     }
+
+    private void Update()
+    {
+        if (transform.parent == null) { Destroy(this.gameObject); }
+    }
 }
