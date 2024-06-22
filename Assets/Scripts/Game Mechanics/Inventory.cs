@@ -13,6 +13,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private List<KeyItemEntry> keyItemList;
 
     
+    // the following method will add an item to the correct inventory based on its type.
     public void AddItemToInventory(Item item)
     {
         switch(item.GetFirstItemType())
@@ -89,6 +90,8 @@ public class Inventory : MonoBehaviour
 
 }
 
+// The following are classes made for the specific item types to use as entries to the correct lists
+// without having to use dictionaries or the less efficent arrays.
 [Serializable]
 public class HealingItemEntry
 {

@@ -111,11 +111,13 @@ public class InventoryMenu : MonoBehaviour
     }
     public void SetCurrentInventory(Inventory inventory, ItemType type)
     {
-        
+        // This will set the inventory to the currently selected inventory type we are looking at.
         if (isSettingInventory) 
         {
+            // we first clear out the inventory
             ClearInventory();
 
+            // and then using a switch statement, we then set the correct inventory
             switch(type)
             {
                 case ItemType.Healing:
