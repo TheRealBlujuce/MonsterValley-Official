@@ -1,3 +1,5 @@
+Please do not use my code or assets.I appreciate your understanding.
+
 # Overview
 
 MonsterValley is a game inspired by Pokémon and Stardew Valley. The game takes place with the player losing either their parents or grandparents and recieve a house and farm in a town (name pending) located in a valley (name pending) which was dubbed the "Monster Valley" because of the strange mutation to the animals which gave them some monster-like properties, affecting their aggresiveness and behaviors. The player then takes part in a tournament to save the town when their former employer attempts to re-purpose the town for some nefarious money-making purpose.
