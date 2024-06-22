@@ -1,4 +1,4 @@
-Please do not use my code or assets.I appreciate your understanding.
+Please do not use my code or assets. I appreciate your understanding.
 
 # Overview
 
